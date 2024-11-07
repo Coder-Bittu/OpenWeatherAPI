@@ -3,6 +3,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 
 body {
@@ -842,10 +843,10 @@ function SetUpTodayData(){
     
     document.getElementById("WeatherType").innerHTML = weatherMain+", "+weatherDesc;
     
-    document.getElementById("WeatherTemp").innerHTML = weatherTemp+"캜";
-    document.getElementById("WeatherTempMin").innerHTML = weatherTempMin+"캜";
-    document.getElementById("WeatherTempMax").innerHTML = weatherTempMax+"캜";
-    document.getElementById("WeatherTempFeelsLike").innerHTML = "Feels like "+feelsLike+"캜";
+    document.getElementById("WeatherTemp").innerHTML = weatherTemp+"째C";
+    document.getElementById("WeatherTempMin").innerHTML = weatherTempMin+"째C";
+    document.getElementById("WeatherTempMax").innerHTML = weatherTempMax+"째C";
+    document.getElementById("WeatherTempFeelsLike").innerHTML = "Feels like "+feelsLike+"째C";
     document.getElementById("WeatherTempHumidity").innerHTML = "Humidity: "+humidity+"%";
     
     document.getElementById("cloud").innerHTML = cloudPerc+"%";
@@ -912,7 +913,7 @@ for(x=0;x<NextFive_Object.list.length;x++){
         
         NextDates[y].innerHTML = Date+" "+MonthNames[Month];
         NextIcons[y].src = "https://openweathermap.org/img/wn/"+NextFive_Object.list[x].weather[0].icon+"@2x.png";
-        NextTempElements[y].innerHTML = parseInt(temp)+"캜";
+        NextTempElements[y].innerHTML = parseInt(temp)+"째C";
         NextHumid[y].innerHTML = humid+"%";
         NextClouds[y].innerHTML = clouds+"%";
         
